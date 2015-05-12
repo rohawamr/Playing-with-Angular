@@ -1,0 +1,29 @@
+<section class="artistinfo">
+<div class="artist cf" ng-model='artists'>
+	<a href="#details/{{prevItem}}" class="btn btn-left">Prev</a>
+	<a href="#details/{{nextItem}}" class="btn btn-left">Next</a>
+
+	<h1>{{artists[whichItem].name}}</h1>
+	<div class="info">
+	<h2>{{artists[whichItem].reknown}}</h2>
+	<img ng-src="images/{{artists[whichItem].shortname}}_tn.jpg" alt="Photo of {{artists[whichItem].name}}">
+	<p>{{artists[whichItem].bio}}</p>
+	<a href="index.html">Back to Home Page..</a>
+	</div>
+
+</div>
+
+<table>
+  <tr><th>row number</th></tr>
+  <tr ng-repeat="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+  	
+  	<td ng-repeat="j in [0, 1, 2, 3, 4, 5, 6, 7]">
+
+  	{{i+1}}{{j+1}}
+  	
+  
+  </td>
+</tr>
+</table>
+
+</section>	
